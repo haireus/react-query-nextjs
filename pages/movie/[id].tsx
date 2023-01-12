@@ -6,14 +6,14 @@ import Grid from '@components/Grid';
 import Card from '@components/Card';
 
 // Utils
+import { basicFetch } from '@utils';
 import {
   movieUrl,
   creditsUrl,
   IMAGE_BASE_URL,
   BACKDROP_SIZE,
   POSTER_SIZE,
-  basicFetch,
-} from '@utils';
+} from '@configs';
 
 // Types
 import type { Movie, Credits, Crew, Cast } from '@types';
