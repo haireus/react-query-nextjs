@@ -3,10 +3,11 @@ import { useInfiniteQuery } from '@tanstack/react-query';
 import { fetchMovies } from '@utils';
 // Types
 import { Movies } from '@types';
+import { queryKey } from '@configs';
 
 export const useFetchMovies = (search: string) => {
   return useInfiniteQuery(
-    ['movies', search],
+    [queryKey.MOVIE, search],
     ({ pageParam = 1 }) => fetchMovies(search, pageParam),
     {
       getNextPageParam: (lastPage: Movies) => {

@@ -6,7 +6,7 @@ import { UIEvent, useState } from 'react';
 import { useFetchMovies } from '@hooks';
 
 // Config
-import { BACKDROP_SIZE, IMAGE_BASE_URL, POSTER_SIZE } from '@utils';
+import { BACKDROP_SIZE, IMAGE_BASE_URL, POSTER_SIZE } from '@configs';
 
 // Components
 import Card from '@components/Card';
